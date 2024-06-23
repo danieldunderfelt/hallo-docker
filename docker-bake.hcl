@@ -3,7 +3,7 @@ variable "REGISTRY" {
 }
 
 variable "REGISTRY_USER" {
-    default = "ashleykza"
+    default = "ddunderfelt"
 }
 variable "APP" {
     default = "hallo"
@@ -42,7 +42,7 @@ target "default" {
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.25.post1"
-        HALLO_COMMIT = "e12f2303bc59858116f5fe129c2ce2b1a6e9ac0f"
+        HALLO_COMMIT = "25f032f4a265ba217b5fd915c650ef33a041372a"
         VENV_PATH = "/workspace/venvs/${APP}"
     }
 }

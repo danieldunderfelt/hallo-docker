@@ -22,7 +22,7 @@ RUN source /venv/bin/activate && \
 
 # Clone the git repo of hallo and set version
 ARG HALLO_COMMIT
-RUN git clone https://github.com/fudan-generative-vision/hallo.git && \
+RUN git clone --depth 1 https://github.com/fudan-generative-vision/hallo.git && \
     cd /hallo && \
     git checkout ${HALLO_COMMIT}
 
